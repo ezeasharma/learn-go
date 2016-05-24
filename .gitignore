@@ -30,4 +30,5 @@ pkg
 #Visual Studio Files
 src/github.com/*
 src/golang.org/*
+src/9fans.net/*
 

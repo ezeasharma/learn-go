@@ -22,3 +22,12 @@ _testmain.go
 *.exe
 *.test
 *.prof
+
+#Bin files#
+bin
+pkg
+
+#Visual Studio Files
+src/github.com/*
+src/golang.org/*
+

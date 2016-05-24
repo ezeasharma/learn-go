@@ -1,0 +1,3 @@
+dependencies:
+    post:
+     - go get -u github.com/golang/lint/gotlint    

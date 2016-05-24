@@ -1,3 +1,6 @@
 dependencies:
     post:
-     - go get -u github.com/golang/lint/gotlint    
+     - go get -u github.com/golang/lint/golint
+test:
+ override:
+  - golint ./..    

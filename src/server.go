@@ -6,9 +6,9 @@ import (
 )
 
 func main(){
-    log.Printf("listening on 8000")
-    http.HandleFunc("/", HandleRequest)
-    err :=http.ListenAndServe(":8000", nil)
+    log.Printf("listening on 8080")
+    http.HandleFunc("/quote", HandleQuoteRequest)
+    err :=http.ListenAndServe(":8080", nil)
     log.Fatal(err)
 }
 

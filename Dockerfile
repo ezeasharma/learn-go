@@ -1,6 +1,6 @@
 FROM golang
 ADD . /app
-WORKDIR /app
+WORKDIR /app/src
 RUN go build 
-ENTRYPOINT ./app
+ENTRYPOINT ./src
 EXPOSE 8080

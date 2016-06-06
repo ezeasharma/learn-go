@@ -5,7 +5,6 @@ import (
     "fmt"
     "io/ioutil"
      "log"
-
 )
 
 //HandleQuoteRequest will be responsible for handling all the web requests.

@@ -1,2 +1,19 @@
+machine:
+    services:
+        - docker
+
+dependencies:
+    override:
+        -docker info
+        
 test:
- override:
+    override:
+        - echo "No tests yet :("
+        
+deployment:
+    hub:
+        branch: master
+        commands:
+            - docker build -t ezeasharma/go-server:$CIRCLE_BUILD_NUM .
+            - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
+            - docker push ezeasharma/go-server:$CIRCLE_BUILD_NUM
